@@ -85,10 +85,12 @@ name here"/ name="userName" required>
       <label for="password">  password:</label>    
 <input   id="password"  name="password" type="password"  placeholder="Enter your  
 password here"/>
-<br>
+</fieldset>
+<fieldset>
+<legend>Personal Data</legend>
 <label for="telephone">  Tel:</label>    
 <input type="tel" id="telephone"    name="telephone" placeholder="Enter your  
-telephone number here"/ pattern="[0][8]{8}"
+telephone number here"/ pattern="[0][8][5-9]{1}[0-9]{7}"
    title="08 followed by 8 digits">
    <br>
    <label for="passport">  passport:</label>
@@ -107,6 +109,12 @@ eircode here"/>
 creditcard number here"/ pattern="[0-9]{16}"
    title="16 digits from front of card">
    <br>
+    <label for="submit">   submit:</label>                                           <input type="submit" value="submit"/>
+   
+   </fieldset>
+<fieldset>
+   <legend>Choices</legend>
+
 <label for="age">  Age:</label>    
 <input type="number" id="age"    name="age" placeholder="Enter your  
 age here"/  min="18" max="120" />
